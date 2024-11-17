@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>의학 용어 약어 시험</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>의학 용어 약어 시험</h1>
+  <div id="question-container">
+    <h2 id="abbreviation"></h2>
+    <input type="text" id="fullTermInput1" placeholder="풀텀 입력 (영어)">
+    <input type="text" id="fullTermInput2" placeholder="뜻 입력 (한국어)">
+    <button onclick="checkAnswer()">제출</button>
+  </div>
+  <h2 id="result" class="hidden"></h2>
+  <table id="errorTable" class="hidden">
+    <thead>
+      <tr>
+        <th>약어</th>
+        <th>정답</th>
+        <th>입력한 답안</th>
+      </tr>
+    </thead>
+    <tbody id="errorLog"></tbody>
+  </table>
+  <script src="script.js"></script>
+</body>
+
+</html>
